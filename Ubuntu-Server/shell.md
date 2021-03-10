@@ -29,4 +29,4 @@ Add `neofetch` in `.zshrc` and of course re-open terminal to see effect
 
 ### Final result
 
-!(Shell)[shell.png]
+![Shell](shell.png)
