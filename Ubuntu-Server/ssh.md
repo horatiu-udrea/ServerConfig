@@ -9,27 +9,32 @@ Install SSH server
 sudo apt install openssh-server
 ```
 
-Enable SSH service
+Manage SSH service
 ```
-sudo systemctl enable ssh
-```
-
-(Optional) Allow SSH through firewall
-```
-sudo ufw allow ssh
+sudo systemctl status sshd
+sudo systemctl enable sshd
+sudo systemctl disable sshd
 ```
 
-Change configuration in `/etc/ssh/sshd_config`
+Allow SSH through firewall
 ```
-Port 2222
+sudo ufw allow ssh  # for default port
+sudo ufw allow 2222 # for custom port
+```
+
+Configuration is in `/etc/ssh/sshd_config`
+```
+Port 2222 # Default port is 22
 PasswordAuthentication no
 ```
 
-Check authorized keys in `~/.ssh/authorized_keys`
+**Host keys** are in the directory`/etc/ssh/`
+
+**Authorized keys** are in the file `~/.ssh/authorized_keys`
 
 See key randomart
 ```
-ssh-keygen -lvf ~/.ssh/<key_location>
+ssh-keygen -lvf <key_location>
 ```
 
 Check IP address
@@ -44,7 +49,11 @@ Install SSH client
 sudo apt install openssh-client
 ```
 
-Connect to the instance
+Connect to instance
 ```
-ssh -i <key_location> -p <port> <username>@<hostname/ip> -o VisualHostKey=yes
+ssh [-i <key_location>] [-p <port>] [-o VisualHostKey=yes] <username>@<hostname/ip>
 ```
+
+**Generated keys** are in the directory `~/.ssh/`
+
+**Known hosts** are in the file `~/.ssh/known_hosts`
