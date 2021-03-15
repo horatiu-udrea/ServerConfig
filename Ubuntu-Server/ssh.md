@@ -49,11 +49,21 @@ Install SSH client
 sudo apt install openssh-client
 ```
 
+Generate new RSA key
+```
+ssh-keygen
+```
+
+Upload key on server
+```
+ssh-copy-id [-i <key_location>] [-p <port>] <username>@<hostname/ip>
+```
+
 Connect to instance
 ```
 ssh [-i <key_location>] [-p <port>] [-o VisualHostKey=yes] <username>@<hostname/ip>
 ```
 
-**Generated keys** are in the directory `~/.ssh/`
+**Generated keys** are (by default) in the directory `~/.ssh/`
 
 **Known hosts** are in the file `~/.ssh/known_hosts`
