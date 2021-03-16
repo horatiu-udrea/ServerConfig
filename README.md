@@ -1,2 +1,3 @@
-# server-config
-Server Configuration
+# Server Configuration
+
+- [Ubuntu Server](Ubuntu-Server/README.md)
