@@ -1,4 +1,4 @@
-![Hacking](https://www.appliedi.net/wp-content/uploads/2014/08/Fotolia_64117399_XS.jpg)
+![Hacking](https://www.axigen.com/usr/files/articles/x82.png.pagespeed.ic.UN0bP5_iVK.png)
 
 Install fail2ban
 ```
