@@ -1,5 +1,7 @@
 # Shell configuration
 
+![Shell](shell.png)
+
 Install zsh
 ```
 sudo apt install zsh
@@ -38,7 +40,3 @@ sudo apt install neofetch
 ```
 
 Add `neofetch` in `.zshrc` and of course re-open terminal to see effect
-
-### Final result
-
-![Shell](shell.png)

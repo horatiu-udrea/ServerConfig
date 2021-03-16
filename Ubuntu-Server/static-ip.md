@@ -1,1 +1,1 @@
-https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-20-04/
+instructions [here](https://linuxize.com/post/how-to-configure-static-ip-address-on-ubuntu-20-04/)
